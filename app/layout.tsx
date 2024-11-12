@@ -1,34 +1,52 @@
-import type { Metadata } from "next";
+"use client";
+
 import { Inter } from "next/font/google";
 import "./globals.css";
-import { ThemeProvider } from "./provider";
-import { ModeToggle } from "@/components/ModeToggle";
+import { ThemeProvider } from "@/components/theme-provider";
+import { useEffect, useState } from "react";
 
 const inter = Inter({ subsets: ["latin"] });
-
-export const metadata: Metadata = {
-  title: "Michele Di Stadio Portfolio",
-  description: "Modern and minimalist portfolio of Michele Di Stadio",
-};
 
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const [theme, setTheme] = useState(() => {
+    if (typeof window !== "undefined") {
+      const savedTheme = localStorage.getItem("theme");
+      if (savedTheme) {
+        return savedTheme;
+      } else {
+        const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)").matches;
+        return prefersDarkScheme ? "dark" : "light";
+      }
+    }
+    return "light"; // Default theme for server-side rendering
+  });
+
+  useEffect(() => {
+    const savedTheme = localStorage.getItem("theme");
+    if (savedTheme) {
+      setTheme(savedTheme);
+    } else {
+      const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)").matches;
+      const initialTheme = prefersDarkScheme ? "dark" : "light";
+      setTheme(initialTheme);
+      localStorage.setItem("theme", initialTheme);
+    }
+  }, []);
+
   return (
-    <html lang="en">
-      <body className={inter.className}>
+    <html lang="en" className={theme} style={{ colorScheme: theme }} suppressHydrationWarning>
+      <body className={inter.className} suppressHydrationWarning>
         <ThemeProvider
-            attribute="class"
-            defaultTheme="system"
-            enableSystem
-            disableTransitionOnChange
-          >
-          <div className="relative min-h-screen"> {/* Ensure this div is relatively positioned */}
-            <ModeToggle /> {/* Mode toggle positioned here */}
-            {children} {/* Your main content */}
-          </div>
+          attribute="class"
+          defaultTheme="light"
+          enableSystem
+          disableTransitionOnChange
+        >
+          {children}
         </ThemeProvider>
       </body>
     </html>
