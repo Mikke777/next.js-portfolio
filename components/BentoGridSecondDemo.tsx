@@ -19,6 +19,7 @@ export function BentoGridSecondDemo() {
           header={item.header}
           className={item.className}
           icon={item.icon}
+          image={item.image}
         />
       ))}
     </BentoGrid>
@@ -30,10 +31,11 @@ const Skeleton = () => (
 const items = [
   {
     title: "About me:",
-    description: "I want to be a full stack developer.",
+    description: "I want to be a full stack.",
     header: <Skeleton />,
     className: "md:col-span-1 md:row-span-1",
     icon: <IconClipboardCopy className="h-4 w-4 text-neutral-500" />,
+    image: "/photo-prof.jpg",
   },
   {
     title: "The Digital Revolution",
