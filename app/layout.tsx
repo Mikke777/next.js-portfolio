@@ -22,7 +22,7 @@ export default function RootLayout({
         return prefersDarkScheme ? "dark" : "light";
       }
     }
-    return "light"; // Default theme for server-side rendering
+    return "light";
   });
 
   useEffect(() => {
