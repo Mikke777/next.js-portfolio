@@ -1,7 +1,8 @@
+import About from "@/components/About";
 import Hero from "@/components/Hero";
 import { ModeToggle } from "@/components/ModeToggle";
 import { FloatingNav } from "@/components/ui/FloatingNav";
-import { FaHome } from "react-icons/fa";
+import { FaHome, FaBeer } from "react-icons/fa";
 
 export default function Home() {
   return (
@@ -11,10 +12,13 @@ export default function Home() {
       <div className="max-w-7xl w-full">
 
         <FloatingNav navItems={[
-          {name: "home", link: "/", icon: <FaHome />}
+          {name: "home", link: "/", icon: <FaHome />},
+          {name: "about", link: "#about", icon: <FaBeer />},
+
         ]} />
         <Hero />
         <ModeToggle />
+        <About />
       </div>
 
 
