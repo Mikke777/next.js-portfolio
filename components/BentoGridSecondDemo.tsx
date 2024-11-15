@@ -8,19 +8,22 @@ import {
   IconTableColumn,
 } from "@tabler/icons-react";
 
+
 export function BentoGridSecondDemo() {
   return (
     <BentoGrid className="max-w-4xl grid-cols-1 mx-auto md:auto-rows-[20rem]">
       {items.map((item, i) => (
         <BentoGridItem
           key={i}
+          id={item.id}
           title={item.title}
           description={item.description}
           header={item.header}
           className={item.className}
           icon={item.icon}
           image={item.image}
-        />
+        >
+        </BentoGridItem>
       ))}
     </BentoGrid>
   );
@@ -30,6 +33,7 @@ const Skeleton = () => (
 );
 const items = [
   {
+    id: 1,
     title: "About me:",
     description: "I want to be a full stack.",
     header: <Skeleton />,
@@ -38,13 +42,15 @@ const items = [
     image: "/photo-prof.jpg",
   },
   {
-    title: "The Digital Revolution",
-    description: "Dive into the transformative power of technology.",
+    id: 2,
+    title: "",
+    description: "" ,
     header: <Skeleton />,
     className: "md:col-span-2 md:row-span-2",
-    icon: <IconFileBroken className="h-4 w-4 text-neutral-500" />,
+    icon: <IconFileBroken className="hidden" />,
   },
   {
+    id: 3,
     title: "The Art of Design",
     description: "Discover the beauty of thoughtful and functional design.",
     header: <Skeleton />,
@@ -52,6 +58,7 @@ const items = [
     icon: <IconSignature className="h-4 w-4 text-neutral-500" />,
   },
   {
+    id: 4,
     title: "The Power of Communication",
     description:
       "Understand the impact of effective communication in our lives.",
@@ -60,6 +67,7 @@ const items = [
     icon: <IconTableColumn className="h-4 w-4 text-neutral-500" />,
   },
   {
+    id: 5,
     title: "The Art of Design",
     description: "Discover the beauty of thoughtful and functional design.",
     header: <Skeleton />,
@@ -67,6 +75,7 @@ const items = [
     icon: <IconSignature className="h-4 w-4 text-neutral-500" />,
   },
   {
+    id: 6,
     title: "The Power of Communication",
     description:
       "Understand the impact of effective communication in our lives.",
