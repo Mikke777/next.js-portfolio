@@ -30,7 +30,7 @@ export default function RootLayout({
     if (savedTheme) {
       setTheme(savedTheme);
     } else {
-      const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)").matches;
+      const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: light)").matches;
       const initialTheme = prefersDarkScheme ? "dark" : "light";
       setTheme(initialTheme);
       localStorage.setItem("theme", initialTheme);
