@@ -59,7 +59,7 @@ const items = [
   },
   {
     id: 4,
-    title: "The Power of Communication",
+    title: "My Tech Stack",
     description:
       "Understand the impact of effective communication in our lives.",
     header: <Skeleton />,
