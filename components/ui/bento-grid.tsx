@@ -1,5 +1,14 @@
 import { cn } from "@/lib/utils";
 import { GlobeDemo } from "./GlobeDemo";
+import { FaHtml5, FaCss3Alt, FaReact, FaBootstrap, FaGitSquare, FaGithub, FaFigma  } from "react-icons/fa";
+import { BsFiletypeScss, BsFiletypeSql } from "react-icons/bs";
+import { IoLogoJavascript } from "react-icons/io5";
+import { SiStimulus, SiNextdotjs, SiSqlite, SiHotwire, SiTailwindcss, SiTypescript, SiHeroku, SiRubyonrails } from "react-icons/si";
+import { DiPostgresql, DiRuby } from "react-icons/di";
+
+
+
+
 
 export const BentoGrid = ({
   className,
@@ -63,6 +72,75 @@ export const BentoGridItem = ({
         {id === 2 && (
           <div>
             <GlobeDemo />
+          </div>
+        )}
+        {id === 4 && (
+          <div className="flex justify-center items-center mt-5">
+            <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-4 xl:grid-cols-5 gap-10">
+              <div className="text-6xl">
+                <FaHtml5 />
+              </div>
+              <div className="text-6xl">
+                <FaCss3Alt />
+              </div>
+              <div className="text-6xl">
+                <BsFiletypeScss />
+              </div>
+              <div className="text-6xl">
+                <SiTailwindcss />
+              </div>
+              <div className="text-6xl">
+                <IoLogoJavascript />
+              </div>
+              <div className="text-6xl">
+                <SiHotwire />
+              </div>
+              <div className="text-6xl">
+                <FaReact />
+              </div>
+              <div className="text-6xl">
+                <SiStimulus />
+              </div>
+              <div className="text-6xl">
+                <SiTypescript />
+              </div>
+              <div className="text-6xl">
+                <FaBootstrap />
+              </div>
+              <div className="text-6xl">
+                <SiNextdotjs />
+              </div>
+              <div className="text-6xl">
+                <BsFiletypeSql />
+              </div>
+              <div className="text-6xl">
+                <DiPostgresql />
+              </div>
+              <div className="text-6xl">
+                <SiSqlite />
+              </div>
+              <div className="text-6xl">
+                <FaGitSquare />
+              </div>
+              <div className="text-6xl">
+                <FaGithub />
+              </div>
+              <div className="text-6xl">
+                <SiNextdotjs />
+              </div>
+              <div className="text-6xl">
+                <DiRuby />
+              </div>
+              <div className="text-6xl">
+                <SiRubyonrails />
+              </div>
+              <div className="text-6xl">
+                <FaFigma />
+              </div>
+              <div className="text-6xl">
+                <SiHeroku />
+              </div>
+            </div>
           </div>
         )}
       </div>

@@ -61,7 +61,7 @@ const items = [
     id: 4,
     title: "My Tech Stack",
     description:
-      "Understand the impact of effective communication in our lives.",
+      "I'm eager to learn new technologies and improve my skills.",
     header: <Skeleton />,
     className: "md:col-span-2 md:row-span-2",
     icon: <IconTableColumn className="h-4 w-4 text-neutral-500" />,
