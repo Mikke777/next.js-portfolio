@@ -6,7 +6,9 @@ import {
   IconFileBroken,
   IconSignature,
   IconTableColumn,
+  IconAward,
 } from "@tabler/icons-react";
+
 
 
 export function BentoGridSecondDemo() {
@@ -55,7 +57,7 @@ const items = [
     description: "Discover the beauty of thoughtful and functional design.",
     header: <Skeleton />,
     className: "md:col-span-1 md:row-span-1",
-    icon: <IconSignature className="h-4 w-4 text-neutral-500" />,
+    icon: <IconAward className="h-4 w-4 text-neutral-500" />,
   },
   {
     id: 4,
@@ -68,17 +70,16 @@ const items = [
   },
   {
     id: 5,
-    title: "The Art of Design",
-    description: "Discover the beauty of thoughtful and functional design.",
+    title: "CV",
+    description: "Click the button to open in a new tab my resume.",
     header: <Skeleton />,
     className: "md:col-span-1",
     icon: <IconSignature className="h-4 w-4 text-neutral-500" />,
   },
   {
     id: 6,
-    title: "The Power of Communication",
-    description:
-      "Understand the impact of effective communication in our lives.",
+    title: "Let's work together",
+    description:"Copy my email.",
     header: <Skeleton />,
     className: "md:col-span-1",
     icon: <IconTableColumn className="h-4 w-4 text-neutral-500" />,

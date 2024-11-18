@@ -1,13 +1,13 @@
+"use client";
+import React, { useState } from "react";
 import { cn } from "@/lib/utils";
 import { GlobeDemo } from "./GlobeDemo";
 import { FaHtml5, FaCss3Alt, FaReact, FaBootstrap, FaGitSquare, FaGithub, FaFigma  } from "react-icons/fa";
 import { BsFiletypeScss, BsFiletypeSql } from "react-icons/bs";
-import { IoLogoJavascript } from "react-icons/io5";
+import { IoCopyOutline, IoLogoJavascript, IoDocument } from "react-icons/io5";
 import { SiStimulus, SiNextdotjs, SiSqlite, SiHotwire, SiTailwindcss, SiTypescript, SiHeroku, SiRubyonrails } from "react-icons/si";
 import { DiPostgresql, DiRuby } from "react-icons/di";
-
-
-
+import MagicButton from "./MagicButton";
 
 
 export const BentoGrid = ({
@@ -47,6 +47,23 @@ export const BentoGridItem = ({
   image?: string;
   children?: React.ReactNode;
 }) => {
+
+  const [copied, setCopied] = useState(false);
+
+  const handleCopy = () => {
+    console.log("copying email");
+    navigator.clipboard.writeText("distadiomichele93@gmail.com");
+    setCopied(true);
+  };
+
+  const [open, setOpen] = useState(false);
+
+  const handleDownload = () => {
+    console.log("open resume");
+    window.open("/CV_MDS.pdf", "_blank");
+    setOpen(true);
+  };
+
   return (
     <div
       className={cn(
@@ -141,6 +158,27 @@ export const BentoGridItem = ({
                 <SiHeroku />
               </div>
             </div>
+          </div>
+        )}
+        {id === 5 && (
+          <div className="mt-8">
+            <MagicButton
+              title={open ? "Clicked" : "Click here"}
+              icon={<IoDocument />}
+              position="left"
+              handleClick={handleDownload}
+            />
+          </div>
+        )}
+
+        {id === 6 && (
+          <div className="mt-8">
+            <MagicButton
+             title={copied ? "Copied!" : "Copy my Email" }
+             icon={<IoCopyOutline />}
+             position="left"
+             handleClick={handleCopy}
+             />
           </div>
         )}
       </div>
