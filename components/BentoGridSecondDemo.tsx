@@ -7,6 +7,7 @@ import {
   IconSignature,
   IconTableColumn,
   IconAward,
+  IconMail,
 } from "@tabler/icons-react";
 
 
@@ -53,8 +54,8 @@ const items = [
   },
   {
     id: 3,
-    title: "The Art of Design",
-    description: "Discover the beauty of thoughtful and functional design.",
+    title: "Comunication Skills",
+    description: "Communication is the key to success.",
     header: <Skeleton />,
     className: "md:col-span-1 md:row-span-1",
     icon: <IconAward className="h-4 w-4 text-neutral-500" />,
@@ -82,6 +83,6 @@ const items = [
     description:"Copy my email.",
     header: <Skeleton />,
     className: "md:col-span-1",
-    icon: <IconTableColumn className="h-4 w-4 text-neutral-500" />,
+    icon: <IconMail className="h-4 w-4 text-neutral-500" />,
   },
 ];

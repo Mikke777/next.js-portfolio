@@ -8,6 +8,7 @@ import { IoCopyOutline, IoLogoJavascript, IoDocument } from "react-icons/io5";
 import { SiStimulus, SiNextdotjs, SiSqlite, SiHotwire, SiTailwindcss, SiTypescript, SiHeroku, SiRubyonrails } from "react-icons/si";
 import { DiPostgresql, DiRuby } from "react-icons/di";
 import MagicButton from "./MagicButton";
+import { Cover } from "@/components/ui/cover";
 
 
 export const BentoGrid = ({
@@ -89,6 +90,13 @@ export const BentoGridItem = ({
         {id === 2 && (
           <div>
             <GlobeDemo />
+          </div>
+        )}
+        {id === 3 && (
+          <div className="flex justify-center items-center mt-14">
+            <h1>
+              <Cover>Accelerated Results Through Focused Communication.</Cover>
+            </h1>
           </div>
         )}
         {id === 4 && (
