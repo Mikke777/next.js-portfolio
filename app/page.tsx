@@ -1,7 +1,7 @@
 import About from "@/components/About";
 import Hero from "@/components/Hero";
 import { ModeToggle } from "@/components/ModeToggle";
-import Project from "@/components/Project";
+import {AppleCardsCarouselDemo} from "@/components/Project";
 import { FloatingNav } from "@/components/ui/FloatingNav";
 import { FaHome, FaBeer } from "react-icons/fa";
 
@@ -20,7 +20,7 @@ export default function Home() {
         <Hero />
         <ModeToggle />
         <About />
-        <Project />
+        <AppleCardsCarouselDemo />
       </div>
 
 
