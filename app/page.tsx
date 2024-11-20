@@ -3,7 +3,9 @@ import Hero from "@/components/Hero";
 import { ModeToggle } from "@/components/ModeToggle";
 import {AppleCardsCarouselDemo} from "@/components/Project";
 import { FloatingNav } from "@/components/ui/FloatingNav";
-import { FaHome, FaBeer } from "react-icons/fa";
+import { FaHome } from "react-icons/fa";
+import { FcAbout } from "react-icons/fc";
+import { GrProjects } from "react-icons/gr";
 import Footer from "@/components/Footer";
 
 export default function Home() {
@@ -15,8 +17,8 @@ export default function Home() {
 
         <FloatingNav navItems={[
           {name: "Home", link: "/", icon: <FaHome />},
-          {name: "About", link: "#about", icon: <FaBeer />},
-          {name: "Projects", link: "#AppleCardsCarouselDemo", icon: <FaBeer />},
+          {name: "About", link: "#about", icon: <FcAbout />},
+          {name: "Projects", link: "#AppleCardsCarouselDemo", icon: <GrProjects />},
         ]} />
         <Hero />
         <ModeToggle />

@@ -40,7 +40,7 @@ const items = [
     title: "About me:",
     description: "I want to be a full stack.",
     header: <Skeleton />,
-    className: "md:col-span-1 md:row-span-1",
+    className: "md:col-span-1 md:row-span-1 bg-white-100",
     icon: <IconClipboardCopy className="h-4 w-4 text-neutral-500" />,
     image: "/photo-prof.jpg",
   },
@@ -49,7 +49,7 @@ const items = [
     title: "",
     description: "" ,
     header: <Skeleton />,
-    className: "md:col-span-2 md:row-span-2",
+    className: "md:col-span-2 md:row-span-2 bg-white-100",
     icon: <IconFileBroken className="hidden" />,
   },
   {
@@ -57,7 +57,7 @@ const items = [
     title: "Comunication Skills",
     description: "Communication is the key to success.",
     header: <Skeleton />,
-    className: "md:col-span-1 md:row-span-1",
+    className: "md:col-span-1 md:row-span-1 bg-white-100",
     icon: <IconAward className="h-4 w-4 text-neutral-500" />,
   },
   {
@@ -66,7 +66,7 @@ const items = [
     description:
       "I'm eager to learn new technologies and improve my skills.",
     header: <Skeleton />,
-    className: "md:col-span-2 md:row-span-2",
+    className: "md:col-span-2 md:row-span-2 bg-white-100",
     icon: <IconTableColumn className="h-4 w-4 text-neutral-500" />,
   },
   {
@@ -74,7 +74,7 @@ const items = [
     title: "CV",
     description: "Click the button to open in a new tab my resume.",
     header: <Skeleton />,
-    className: "md:col-span-1",
+    className: "md:col-span-1 bg-white-100",
     icon: <IconSignature className="h-4 w-4 text-neutral-500" />,
   },
   {
@@ -82,7 +82,7 @@ const items = [
     title: "Let's work together",
     description:"Copy my email.",
     header: <Skeleton />,
-    className: "md:col-span-1",
+    className: "md:col-span-1 bg-white-100",
     icon: <IconMail className="h-4 w-4 text-neutral-500" />,
   },
 ];
