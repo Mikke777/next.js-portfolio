@@ -12,14 +12,14 @@ export const data = [
         imgAlt: "melody Image 1",
       },
       {
-        title: "AI Rule 2",
-        description: "Keep a journal, quickly jot down a grocery list, and take amazing class notes.",
+        title: "Follow your Trendsetters",
+        description: "Follow your favorite trendsetters and see their events.",
         imgSrc: "/trendsetters.png",
         imgAlt: "melody Image 2",
       },
       {
-        title: "AI Rule 3",
-        description: "Want to convert those notes to text? No problem.",
+        title: "Melody Blog",
+        description: "Chat with everyone interested in the event! Organize your own events, make new friends!",
         imgSrc: "/melodyblog.png",
         imgAlt: "melody Image 3",
       },
@@ -39,7 +39,7 @@ export const data = [
       },
       {
         title: "Do your Offers",
-        description: "set your own prices and conditions.",
+        description: "Set your own prices and conditions.",
         imgSrc: "/offer.png",
         imgAlt: "rent Image 2",
       },
