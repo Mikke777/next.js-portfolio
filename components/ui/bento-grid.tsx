@@ -4,7 +4,7 @@ import { cn } from "@/lib/utils";
 import { GlobeDemo } from "./GlobeDemo";
 import { FaHtml5, FaCss3Alt, FaReact, FaBootstrap, FaGitSquare, FaGithub, FaFigma  } from "react-icons/fa";
 import { BsFiletypeScss, BsFiletypeSql } from "react-icons/bs";
-import { IoCopyOutline, IoLogoJavascript, IoDocument } from "react-icons/io5";
+import { IoCopyOutline, IoLogoJavascript, IoDocument, IoLogoNodejs } from "react-icons/io5";
 import { SiStimulus, SiNextdotjs, SiSqlite, SiHotwire, SiTailwindcss, SiTypescript, SiHeroku, SiRubyonrails } from "react-icons/si";
 import { DiPostgresql, DiRuby } from "react-icons/di";
 import MagicButton from "./MagicButton";
@@ -164,6 +164,9 @@ export const BentoGridItem = ({
               </div>
               <div className="text-6xl">
                 <SiHeroku />
+              </div>
+              <div className="text-6xl">
+                <IoLogoNodejs />
               </div>
             </div>
           </div>
