@@ -4,6 +4,7 @@ import { ModeToggle } from "@/components/ModeToggle";
 import {AppleCardsCarouselDemo} from "@/components/Project";
 import { FloatingNav } from "@/components/ui/FloatingNav";
 import { FaHome, FaBeer } from "react-icons/fa";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -21,6 +22,7 @@ export default function Home() {
         <ModeToggle />
         <About />
         <AppleCardsCarouselDemo />
+        <Footer />
       </div>
 
 
