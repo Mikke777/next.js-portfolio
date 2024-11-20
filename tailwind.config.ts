@@ -45,6 +45,7 @@ const config = {
           '100': '#E4ECFF'
         },
         purple: '#CBACF9',
+        yellow: '#FFD700',
         border: 'hsl(var(--border))',
         input: 'hsl(var(--input))',
         ring: 'hsl(var(--ring))',
@@ -84,6 +85,15 @@ const config = {
           '3': 'hsl(var(--chart-3))',
           '4': 'hsl(var(--chart-4))',
           '5': 'hsl(var(--chart-5))'
+        },
+        lightMode: {
+          globe: '#FFB74D',
+          atmosphere: '#FFE0B2',
+          polygon: 'rgba(255, 204, 128, 0.7)',
+          emissive: '#FF9800',
+          ambientLight: '#FFCC80',
+          directionalLight: '#FFAB40',
+          pointLight: '#FF6F00',
         }
       },
       borderRadius: {
