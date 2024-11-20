@@ -22,6 +22,7 @@ const DummyContent = ({ content }) => {
               alt={item.imgAlt}
               height={500}
               width={500}
+              sizes={item.sizes}
               className="md:w-1/2 md:h-1/2 h-full w-full mx-auto object-contain"
             />
           </div>
@@ -39,13 +40,22 @@ const contentMap = projectData.reduce((acc, item) => {
 
 export function AppleCardsCarouselDemo() {
   const cards = projectData.map((card, index) => (
-    <Card key={card.src} card={{ ...card, content: contentMap[card.contentId] }} index={index} />
+    <Card
+      key={card.src}
+      card={{
+        ...card,
+        content: contentMap[card.contentId],
+        sizes: card.sizes,
+        priority: card.src === "/homep.png", // Add priority to the LCP image
+      }}
+      index={index}
+    />
   ));
 
   return (
     <div id="AppleCardsCarouselDemo" className="w-full h-full py-20">
       <h2 className="max-w-7xl pl-4 mx-auto text-xl md:text-5xl font-bold text-neutral-800 dark:text-neutral-200 font-sans">
-        Some of my projects!(Click on the cards to see thw feautures)
+        Some of my projects!(Click on the cards to see the features)
       </h2>
       <Carousel items={cards} />
     </div>

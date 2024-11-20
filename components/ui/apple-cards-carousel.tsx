@@ -261,6 +261,8 @@ export const Card = ({
           alt={card.title}
           fill
           className="object-cover absolute z-10 inset-0"
+          sizes={card.sizes}
+          priority={card.priority}
         />
       </motion.button>
     </>
@@ -273,8 +275,10 @@ export const BlurImage = ({
   src,
   className,
   alt,
+  sizes,
+  priority,
   ...rest
-}: ImageProps) => {
+}: ImageProps & { sizes?: string; priority?: boolean }) => {
   const [isLoading, setLoading] = useState(true);
   return (
     <Image
@@ -287,10 +291,11 @@ export const BlurImage = ({
       src={src}
       width={width}
       height={height}
-      loading="lazy"
       decoding="async"
       blurDataURL={typeof src === "string" ? src : undefined}
       alt={alt ? alt : "Background of a beautiful view"}
+      sizes={sizes}
+      priority={priority}
       {...rest}
     />
   );
