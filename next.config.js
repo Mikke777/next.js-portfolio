@@ -2,7 +2,7 @@
 const nextConfig = {
   /* config options here */
   typescript: {
-    ignoreBuildErrors: true,
+    ignoreBuildErrors: false,
   },
   staticPageGenerationTimeout: 300,
   experimental: {

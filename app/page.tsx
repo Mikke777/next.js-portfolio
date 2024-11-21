@@ -1,4 +1,4 @@
-import About from "@/components/About";
+// import About from "@/components/About";
 // import Hero from "@/components/Hero";
 // import { ModeToggle } from "@/components/ModeToggle";
 // import { AppleCardsCarouselDemo } from "@/components/Project";
