@@ -33,7 +33,8 @@
     "tailwindcss-animate": "^1.0.7",
     "three": "^0.170.0",
     "three-globe": "^2.34.4",
-    "punycode": "^2.1.1"
+    "punycode": "^2.1.1",
+    "vercel": "^34.0.0"
   },
   "devDependencies": {
     "@types/node": "^20",
