@@ -9,6 +9,7 @@ import { SiStimulus, SiNextdotjs, SiSqlite, SiHotwire, SiTailwindcss, SiTypescri
 import { DiPostgresql, DiRuby } from "react-icons/di";
 import MagicButton from "./MagicButton";
 import { Cover } from "@/components/ui/cover";
+import Image from "next/image";
 
 
 export const BentoGrid = ({
@@ -74,7 +75,7 @@ export const BentoGridItem = ({
       { id === 1 && (
         <div className="w-full">
           {image && (
-            <img src={image} alt={title as string} className="object-center rounded-full" />
+            <Image src={image} alt={title as string} className="object-center rounded-full" width={500} height={500} />
           )}
         </div>
       )}
